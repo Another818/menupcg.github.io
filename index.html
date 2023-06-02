@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang= "es">
 <head>
-  <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús para cada gusto!</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>Welcome to my website.</p>
+    <header class="header" id="inicio">
+        <img src="img/bxMenu.svg" alt="" class="menu">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#menus">Menús</a>
+            <a href="#sobre_mi">Sobre Mí</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">¡Menús para cada gusto!</h1>
+            <p class="copy">Contactanos a nuestro Whatsapp para más información.</p>
+            <a href="https://wa.me/543544660113?text=Podrías%20pasarme%20el%20menú%20de%20la%20semana?" target="_blank" class="boton">
+                <img src="img/whats-logo.png" class="logo">
+                <span class="texto-boton">Contactanos!</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="gallery" id="menus">
+            <div class="contenedor">
+                <h2 class="subtitulo">Menús</h2>
+                <div class="contenedor-galeria">
+                    <a href="https://github.com/Another818/AsistenteVirtual">
+                        <img src="img/AsistenteVir.jpg" alt="" class="img-galeria">
+                    </a>
+                    <a href="https://github.com/Another818/Proyecto_6">
+                        <img src="img/AsistenteVir.jpg" alt="" class="img-galeria">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contenedor" id="sobre_mi">
+            <h2 class="subtitulo">Sobre Mí</h2>
+            <section class="virtudes">
+                
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Menús para cada gusto!</h2>
+                <p>Somos expertos en la creación de Sabores Exquisitos.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://wa.me/543544660113?text=Podrías%20pasarme%20el%20menú%20de%20la%20semana?" class="social-media-icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/tomás-menna" class="social-media-icon">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+                <a href="https://www.instagram.com/aurorasoftware06/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
