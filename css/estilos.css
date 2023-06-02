@@ -43,7 +43,9 @@ body{
 .boton {
     display: inline-flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
     background-color: rgb(7, 151, 7);
     color: white;
     border-radius: 10px;
@@ -53,7 +55,7 @@ body{
 }
 
 .logo {
-    width: 20px; 
+    width: 25px; 
     margin-right: 10px; 
 }
 
