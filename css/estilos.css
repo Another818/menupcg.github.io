@@ -111,51 +111,12 @@ body{
     font-size: 25px;
 }
 
-/* Mi servicio */
-
 .subtitulo{
     text-align: center;
     font-weight: 300;
-    color: #9f8ad0;
+    color: #b05208;
     margin-bottom: 40px;
     font-size: 40px;
-}
-
-.contenedor-servicio{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contenedor-servicio img{
-    width: 40%;
-}
-
-.checklist-servicio{
-    width: 45%;
-}
-
-.service{
-    margin-bottom: 20px;
-}
-
-.n-service{
-    margin-bottom: 7px;
-    color: #9f8ad0;
-}
-
-.number{
-    display: inline-block;
-    background: linear-gradient(90deg, rgba(161,140,209,1) 2%, rgba(251,194,235,1) 68%);
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    font-weight: 700;
-    line-height: 30px;
-    margin-right: 3px;
 }
 
 /* Portafolio */
@@ -166,7 +127,7 @@ body{
 
 .contenedor-galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
     grid-gap: 15px; /* Ajusta el espacio deseado entre las imágenes */
     justify-items: center; /* Centra horizontalmente las imágenes */
 }
@@ -183,6 +144,46 @@ body{
     cursor: pointer;
 }
 
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
 /* Virtudes (Sobre Mi) */
 .virtudes{
     display: flex;
@@ -190,25 +191,6 @@ body{
     align-items: center;
     flex-wrap: wrap;
 
-}
-
-.cont-virtud{
-    width: 30%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cont-virtud img{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.n-virtud{
-    display: inline-block;
-    margin-top: 20px;
-    width: 100%;
-    font-weight: 400;
 }
 
 /* Footer */
@@ -286,20 +268,7 @@ footer{
         font-size: 40px;
     }
 
-    .contenedor-servicio img{
-        width: 80%;
-        margin-bottom: 40px;
-    }
-
-    .checklist-servicio{
-        width: 80%;
-    }
-
-    .service{
-        margin-bottom: 30px;
-    }
-
-    .cont-virtud{
+    .agregar-imagen{
         width: 80%;
     }
 
@@ -339,6 +308,10 @@ footer{
     
     .titulo{
         font-size: 30px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
     }
 
     .subtitulo{
